@@ -1,0 +1,130 @@
+:root{
+    --T-primary-color: #1d3b7a;
+    --T-acent-primary-color: #105ca8;
+    --T-secondary-color: #43ac34;
+    --T-acent-secondary-color: #43c947;
+    --T-backgound-primary-color: #f5f8fd;
+    --T-backgound-secondary-color: #fff;
+    --T-primary-text-color: #413e66;
+}
+/* TEMA Material TEXT*/
+.text-Tprimary{
+    color: var(--T-primary-color);
+}
+.text-Tsecondary{
+    color: var(--T-secondary-color);
+}
+.bg-tprimary{
+    background: #f5f8fd;
+}
+.bg-tsecondary{
+    background: #fff;
+}
+.bg-tcprimary{
+    background: #105ca8;
+}
+.bg-tcsecondary{
+    background: #43ac34;
+}
+/* TEMA Material BTN*/
+.btn-Tprimary{
+    color: var(--T-backgound-primary-color);
+    background: var(--T-primary-color);
+    border-radius: 3px;
+    position: relative;
+    margin-right: 2px;
+}
+.btn-Tprimary:hover{
+    color: var(--T-backgound-primary-color);
+    background: var(--T-acent-primary-color);
+}
+.btn-Tsecondary{
+    color: var(--T-backgound-primary-color);
+    position: relative;
+    margin-right: 2px;
+    background: var(--T-secondary-color);
+    border-radius: 3px;
+}
+.btn-Tsecondary:hover{
+    color: var(--T-backgound-primary-color);
+    background: var(--T-acent-secondary-color);
+}
+/* TEMA Helpers*/
+.text-justify{
+    text-align: justify;
+}
+.italic{
+    font-style: italic;
+} 
+.strong{
+    font-weight: bold;
+}
+/* Body Styles */
+body{
+    background: #f5f8fd;
+    font-family: "Open Sans", sans-serif;
+    color: #413e66;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner{
+    padding: 10em 5em 5em;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#banner .img-banner{
+    padding-top: 2em;
+}
+#services{
+    background: var(--T-backgound-secondary-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#about{
+    background: #f5f8fd;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#work{
+    background: var(--T-backgound-secondary-color);
+    padding: 10em 5em 5em;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#service{
+    padding: 2em;
+}
+#calibracion{
+    padding: 2em;
+}
+#inspeccion{
+    background: #fff;
+    padding: 2em;
+}
+#preventivo{
+    background: #fff;
+    padding: 2em;
+}
+@media (max-width: 992px)
+{
+    #banner{
+        padding: 8em 20px 5em;
+        flex-direction: column-reverse;
+    }
+    #banner .img-banner{
+        padding-top: 0;
+    }
+    #about .container{
+        margin-top: 0;
+    }
+}

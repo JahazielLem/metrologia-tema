@@ -1,0 +1,227 @@
+{% include 'base/base.html' %}
+{% block content %}
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="container">
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>¡Gracias!</strong> {{ messages[0] }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+    {% endif %}
+{% endwith %}
+<section class="" id="service">
+    <br>
+    <br>
+    <div class="container text-justify mt-5">
+        <h2 class="text-center"><strong>{% block title %}Servicios{% endblock %}</strong></h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Nuestros servicios son realizados por personal capacitado,
+                        con amplia experiencia en el campo y vocación de servicio.
+                        <br>
+                       Ofrecemos servicios completos en sistemas de pesaje, desde la propia instalación
+                       de equipos, mantenimiento preventivo y correctivo, calibración e inspección.
+                       Realizando servicio a instrumentos de bajo, medio y alcance.
+                    </p>
+                    <ul>
+                        <li><h5>Contratos</h5>
+                            <p>Al contar con un contrato de servicio, ofrecemos a nuestros clientes un descuento
+                                especial en refacciones y mano de obra por servicos correctivos en sus equipos
+                                contratados.
+                            </p>
+                        </li>
+                        <li>
+                            <h5>Tiempo de respuesta</h5>
+                            <p>Nuestro de atención es inmediato y la visita con nuestros no rebasa las 24 hrs posteriores
+                                a la llamada y/o email, ya que este lapso es el limite al cual nos comprometemos con nuestros
+                                clientes para asegurar una calidad en nuestro servicio.
+                            </p>
+                        </li>
+                        <li>
+                            <h5>Cotizaciones</h5>
+                            <p>El lapso de respuesta no es mayor a 2 días hábiles para formular la respuesta y enviarla al cliente
+                                para su análisis.
+                            </p>
+                        </li>
+                    </ul>
+                    <h5 class="text-center"><strong>¡Contamos con un alcance de hasta 150 000 kg para alto alcance!</strong></h5>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <div id="carouselServices" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li
+                                data-mdb-target="#carouselServices"
+                                data-mdb-slide-to="0"
+                                class="active"
+                            ></li>
+                            <li data-mdb-target="#carouselServices" data-mdb-slide-to="1"></li>
+                            <li data-mdb-target="#carouselServices" data-mdb-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner rounded" data-mdb-interval="500">
+                            <div class="carousel-item active">
+                                <img
+                                src="static/img/Proyectos/IMG-20210131-WA0005.jpg"
+                                class="d-block w-100 h-100"
+                                alt="..."
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                src="static/img/Proyectos/IMG-20210201-WA0051.jpg"
+                                class="d-block w-100"
+                                alt="..."
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                src="static/img/Proyectos/IMG-20210131-WA0065.jpg"
+                                class="d-block w-100 h-100"
+                                alt="..."
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+    </div>
+</section>
+<section id="preventivo">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-justify">
+                <h3 class="text-center">Mantenimiento Preventivo</h3>
+                <p>El servicio <strong>Preventivo</strong> nos permite conocer el estado de la báscula en un punto inicial y final de pruebas,
+                    este servicio nos permite determinar las causas probables por las que el instrumento pueda fallar y nos permite
+                    realizar recomendaciones oportunas para su mantenimiento.
+                    <br>
+                    Se realiza una revisión del sistema mecánico y electrónico,
+                    revisión del estado de la escala del instrumento y ajuste del mismo usando pesas patrón calibradas.
+                </p>
+                <p>Las pruebas de servicio estan basadas en las normas aplicables como la NOM-010-SCFI-1994,
+                    realizando las siguientes pruebas:
+                </p>
+                <ul>
+                    <li>
+                        <a href="#"><strong>Repetibilidad</strong></a>: Se coloca una carga constante de manera
+                        repetitiba sobre el instrumento intentando abarcar en la medida de lo posible entre el 50% y 100% de Max.
+                    </li>
+                    <li>
+                        <a href="#"><strong>Excentricidad</strong></a>: Se coloca una carga constante sobre el instrumento
+                        evaluando sus puntos de apoyo, dependiendo el instrumento es la cantidad de evaluables posibles.
+                    </li>
+                    <li>
+                        <a href="#"><strong>Linealidad</strong></a>: Con el instrumento estando en cero, se van colocando
+                        cargas equidistantes de manera ascendente o descendente tocando al menos 5 puntos del instrumento.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="calibracion">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-justify">
+                <h3 class="text-center">Calibración</h3>
+                <p>
+                    El servicio de <strong>Calibración</strong> se realiza basadado en un procedimiento basado en normas
+                    y personal acreditado los errores de indicación del instrumento y la incertidumbre asociada en intervalos
+                    especificos para determinar el desempeño del equipo y si cumple con el Sistema de Gestión de Calidad internos y externos.
+                    <br>
+                    El resultado de las pruebas genera un <strong>Certificado de Calibración</strong> en el cual se detalla los valores
+                    obtenidos durante la calibración. Este certificado tiene validez oficial por la Entidad Mexicana de Acreditación (EMA)
+                    funciona como comprobante del estado de los instrumento en caso de audoría.
+                </p>
+                <p>Al igual que Mantenimiento Preventivo las pruebas realizadas para la calibración son basadas por las
+                    normas aplicables por lo que se realizan pruebas semejantes en Calibración.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="inspeccion">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-justify">
+                <h3 class="text-center">Inspección</h3>
+                <p>
+                    El servicio de <strong>Inspección</strong> nos permite <strong>Evaluar la Conformidad</strong> del instrumento 
+                    mediante un procedimiento basado en normas, que nos permite dictaminar si cumple o no con las leyes
+                    aplicables.
+                    <br>
+                    Durante las pruebas Inspección las lecturas son evaluadas para ver si cumple o no cumple,
+                    si cumple con todas las pruebas se coloca un distintivo con la leyenda
+                    <span class="italic strong">"Instrumento apto para transacciones comerciales"</span>.
+                    <br> 
+                    Es responsabilidad del usuario solicitar este servicio.
+                </p>
+                <h4 class="text-center">Tipos de Inspección</h4>
+                <table class="table table-striped align-middle table-responsive ">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col" class="text-center">Inspección</th>
+                            <th scope="col" class="text-center">Se realiza</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Inicial*</th>
+                            <td>Se realiza cuando el instrumento cuenta con la aprobación de modelo
+                                o prototipo y las caracteríscticas del instrumento coincidan con las
+                                establecidas en dicha aprobación.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Periodica Anual</th>
+                            <td>Se realiza a instrumento que se encuentre en listado de aprobación de
+                                modelo o prototipo que publique la DGN de la Secretaría de Economía,
+                                y de aquellos instrumentos en donde los usaurios presenten al momento
+                                de la inspección, factura correspondiente o la constancia expedida por 
+                                el fabricante o importador de instrumento, en donde se evidencia
+                                que el año de fabraciación del instrumento no es mayor a diez años de
+                                antigüedad, debe realizarse una vez al año.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Periodica Semestral</th>
+                            <td>Se realiza cuando los instrumentos no esten en el listado de aprobación de modelo
+                                o prototipo, o cuando tengan una antigüedad mayor a los 10 años. Se deben realizar
+                                cada seis meses de manera periódica en las <a href="#">fechas</a> correspondientes.
+                                <br>
+                                La antigüedad del isntrumento s debe demostrar mediante factura correspondiente o
+                                bien mediante la constancia que expida el fabricante o importador del mismo.**
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Extraordinaria</th>
+                            <td>Se realiza cuando una vez concluida las fechas de la inspección inicial o periódica.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <strong>Nota:</strong>
+                    <ul>
+                        <li>*En los instrumentos para pesar, nuevos, instalados apartir de la entrada en vigor
+                            de la lista, que no tengan aprobación de modelo o prototipo,
+                            no podrá realizarse la inspección periódica si no cuentan con la inspección inicial.</li>
+                        <li>**En ausencia de dicha factura o constancia, se consideraraá qe el instrumento tiene
+                            una antigüedad mator a diez años.
+                        </li>
+                    </ul>
+                </p>
+                <p>Se evalua el instrumento bajo los EMT***, comparando las diferencias encontradas entre las pruebas
+                    con el EMT en el intervalo de prueba, si el error de indicación no es mayor que el EMT, el instrumento
+                    cumple la prueba.
+                </p>
+                <p>
+                    ***Los <strong>Errores Maxímos Tolerados</strong> (EMT) son valores de refencia que nos proporciona
+                    la NOM-010_SCFI-1994, en donde para cada invtervalo nos dice como sacar su EMT correspondiente.
+                    Generando un <strong>Dictamen de Inspección</strong> con los resultados.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
