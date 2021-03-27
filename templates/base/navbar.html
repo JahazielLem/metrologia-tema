@@ -1,0 +1,32 @@
+<nav class="navbar fixed-top navbar-expand-lg bg-white shadow-sm">
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+            <div class="col">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars navbar-toggler-icon text-Tprimary"></i>
+                </button>
+            </div>
+            <div class="col text-center">
+                <a class="navbar-brand" href="{{ url_for('index') }}">
+                    <img src="/static/img/Tema_ORG.png" alt="" class="img-fluid w-50">
+                </a>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse text-center align-items-center justify-content-center" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('servicios') }}">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Nuestro trabajo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
