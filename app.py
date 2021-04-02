@@ -35,7 +35,7 @@ def sendEmail():
       numero = request.form['numero']
       comentarios = request.form['comentarios']
       stringData = "Nombre: {}\nEmail: {}\nNumero: {}\nComentarios: {}".format(nombre,email,numero,comentarios)
-      msg = Message(asunto, recipients=['dewefi3825@lidte.com'])
+      msg = Message(asunto, recipients=['kevinleon.morales@gmail.com'])
       msg.html = '<p>Nombre: {}</p><br><p>Email: {}</p><br><p>Número {}</p><br><p>Comentarios: {}</p>'.format(nombre,email,numero,comentarios)
       mail.send(msg)
       flash('Se envio tu correo con exito, nos contactaremos cuanto antes.')
